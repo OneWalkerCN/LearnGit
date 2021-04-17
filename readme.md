@@ -1,4 +1,4 @@
-# 这是一个git练习笔记
+# 这是一个git学习笔记
 
 > git是一个免费开源的好工具
 > 我们都喜欢git，所以要学习它
@@ -36,3 +36,16 @@
 * git reset --hard <版本号（前几位就好）>
 
 * git reflog --查看每一次命令
+
+> git reflog查看历史指令可以找到每次commit的版本号
+
+## git提交过程
+
+工作区 --<git add>-->stage(暂存区)--<git commit>-->分支
+
+## 撤销修改
+
+* git checkout --file 丢弃工作区修改（没有提交到暂存）
+
+* git reset HEAD <文件名> 撤销暂存区修改，放回到工作区（已经提交到暂存但还没commit）
+
