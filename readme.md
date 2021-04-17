@@ -20,3 +20,19 @@
 * git giff --查看具体修改内容
 
 * git log --查看版本历史记录（--pretty=oneline参数更好的观看）
+
+## 回退上一个版本
+
+> HEAD指向的版本就是当前版本
+
+* git reset --hard HEAD^
+
+> 上一个版本 HEAD^ 
+> 上上个版本 HEAD^^
+> 上第十给版本 HEAD~10
+
+## 指定到一个版本
+
+* git reset --hard <版本号（前几位就好）>
+
+* git reflog --查看每一次命令
