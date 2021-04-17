@@ -41,7 +41,7 @@
 
 ## git提交过程
 
-工作区 --<git add>-->stage(暂存区)--<git commit>-->分支
+工作区 --git add-->stage(暂存区)--git commit-->分支
 
 ## 撤销修改
 
@@ -55,3 +55,24 @@
 
 * git checkout --<文件名> 版本库替换工作区的文件
 
+## 远程连接到GitHub
+
+* ssh-keygen -t rea -C "<你的邮箱>"
+
+> 在用户主目录（默认C:\Users\Administrator\.ssh）找到`id_rsa.pub`公钥,将其内容填到Account settings->SSH keys->Add SSH Key
+
+> 每台机器都可以将自己的公钥提交到一个账户，这样可以多台机器公用一个远程账户
+
+* git remote add <远程库名> <远程库地址>  添加远程库
+
+* git push -u <远程库名> <分支名称> 将本地分支与远程库分支关联
+
+> 做完以上工作后，远程库和本地库就已经同步了
+
+* git push <远程库名> <分支名称> 提交本地修改到GitHub
+
+## 删除远程库
+
+* git remote -v 查看远程库信息
+
+* git remote rm <远程库名> 删除远程库与本地库关联
