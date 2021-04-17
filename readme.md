@@ -49,3 +49,9 @@
 
 * git reset HEAD <文件名> 撤销暂存区修改，放回到工作区（已经提交到暂存但还没commit）
 
+## 删除文件
+
+* git rm 从库中删除文件 然后 git commit
+
+* git checkout --<文件名> 版本库替换工作区的文件
+
